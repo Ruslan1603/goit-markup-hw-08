@@ -1,0 +1,23 @@
+.header {
+    font-weight: 500;
+    line-height: calc(16.41 / 14);
+    letter-spacing: calc(14px * 0.02);
+    border-bottom: 1px solid #ececec;
+    --contact-color: $contact-color;
+
+    @media screen and (max-width:767px) {
+        height: 60px;
+
+        &__container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+@import "container";
+@import "contacts";
+@import "logo";
+@import "navigation";
